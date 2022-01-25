@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Lato:wght@100;900&family=Luxurious+Script&family=Merriweather:wght@300&family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@300;800&family=PT+Serif&family=Readex+Pro:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,400&family=Smooch&display=swap');
+
+
+html {
+    font-family: 'Corinthia', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Luxurious Script', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Smooch', cursive;
+}
+
+body {
+    font-family: 'Corinthia', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Luxurious Script', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Smooch', cursive;
+    background-color: hsl(0, 60%, 98%);
+    margin: 0;
+}

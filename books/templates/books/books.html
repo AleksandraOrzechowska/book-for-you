@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+<head>
+
+    <title> {% block title %}All books{% endblock %} </title>
+
+</head>
+
+<body>
+
+
+
+
+    {% block content %}
+
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'add-book' %}">Add a book</a>
+        </li>
+
+    </ul>
+
+    <p1>
+        <center>List of all books.</center>
+    </p1>
+    {% if all_books %}
+    <table class="table">
+
+        {% for book in all_books %}
+        <tr>
+
+            <td>
+                <center><a href="{{book.get_absolute_url}}">{{ book.title }}</a></center>
+            </td>
+            <td>
+                <center> {{ book.genre }}</center>
+            </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <hr>
+    <p>Total number {{ books_sum }}</p>
+
+
+    {% endblock %}
+
+
+</body>

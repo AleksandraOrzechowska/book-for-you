@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Add a book{% endblock %}
+
+{% block content %}
+
+<p1>Add a new book.</p1>
+
+
+
+<form class="d-flex">
+    <form method="POST">
+        {% csrf_token %}
+        <input class="form-control me-2" type="search" placeholder="Title" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Submit</button>
+    </form>
+
+
+    {% endblock %}
