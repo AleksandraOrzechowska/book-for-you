@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Book, Author, Tag
 
-# Register your models here.
 
 
 
