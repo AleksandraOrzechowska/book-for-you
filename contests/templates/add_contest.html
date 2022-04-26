@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Add a book{% endblock %}
+{% block title %}Add a contest{% endblock %}
 
 {% block content %}
 
-  <form action="{% url 'book-added' %}" method="POST">
+  <form action="{% url 'contest-added' %}" method="POST">
     {% csrf_token %}
     {% for field in form %}
     <div class="form-control {% if field.errors %}errors{% endif %}">

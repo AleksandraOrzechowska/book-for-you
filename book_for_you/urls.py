@@ -22,4 +22,5 @@ urlpatterns = [
     path('reviews/', include('reviews.urls')),
     path('', include('books.urls')),
     path('account/',include('account.urls')),
+    path('contests/',include('contests.urls')),
 ]

@@ -1,13 +1,20 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Book
-from .forms import BookForm
-from django.http import Http404
+from .forms import BookForm, Book_Form
+from django.http import Http404, HttpResponseRedirect
+
 
 # Create your views here.
 
 
 def add_book(request):
-    return render(request, "books/add_book.html", {})
+    if request.method == 'POST':
+        form = Book_Form(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect("/book-added")
+    else:
+        form = Book_Form()
+    return render(request, "books/add_book.html", {"form" : form })
 
 
 def start_page(request):
@@ -26,3 +33,8 @@ def book_details(request, slug):
         "title": book.title,
         "description" : book.description,
     })
+
+
+
+def book_added(request):
+    return render(request, "books/book_added.html")
